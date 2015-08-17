@@ -29,7 +29,15 @@
 {
     NSArray *alphabet =
     [NSArray arrayWithObjects: @"a", @"b", @"c", @"d", @"e", @"f", nil];
-    return alphabet[[self generateRandomNumberBetween0And:(alphabet.count-1)]];
+    
+    NSString *newRandomLetter = alphabet[[self generateRandomNumberBetween0And:(alphabet.count-1)]];
+
+    while ([newRandomLetter isEqualToString: self.randomLetter.text])   {
+        newRandomLetter = alphabet[[self generateRandomNumberBetween0And:(alphabet.count-1)]];
+    }
+    
+    
+    return newRandomLetter;
 }
 
 /**

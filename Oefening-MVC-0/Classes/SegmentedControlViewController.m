@@ -36,7 +36,7 @@
 }
 */
 
-- (IBAction)changeBackgroundColor:(id)sender {
+- (IBAction)changeBackgroundColor:(SegmentedControlViewController*)sender {
     if ([sender selectedSegmentIndex] == 1)  {
         self.view.backgroundColor = [UIColor blackColor];
         self.label.text = @"it's bad luck";

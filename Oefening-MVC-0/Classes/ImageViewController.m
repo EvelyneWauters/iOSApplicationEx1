@@ -21,8 +21,13 @@
     //self.imageView.image = [UIImage imageNamed:@"emoji"];
     
     NSArray *imageArray = [ImageViewController getImageArray];
-    self.imageView.image = imageArray[[ImageViewController generateRandomPlaceInArray: imageArray]];
+    UIImage *thisPineapple = imageArray[[ImageViewController generateRandomPlaceInArray: imageArray]];
     
+    while([thisPineapple isEqual:self.imageView.image]) {
+        thisPineapple = imageArray[[ImageViewController generateRandomPlaceInArray: imageArray]];
+    }
+    
+    self.imageView.image = thisPineapple;
     
     //warning - Every time you press the button, select another image. Be sure to check out the UIImageView's scaling modes. The UIImageView is `NOT` yet connected to a property and the UIButton is `NOT` yet connected to this IBAction.
 }

@@ -19,12 +19,17 @@
 
 - (IBAction)didTapButton:(UIButton *)button
 {
-#warning - Every time you press the button, a random number & letter should appear on the screen. The UILabels are already connected to a property and the UIButton is already connected to this IBAction.
+    self.randomLetter.text = [self generateRandomLetter];
+    self.randomNumber.text = [NSString stringWithFormat: @"%lu",(unsigned long)[self generateRandomNumber]];
+    
+//warning - Every time you press the button, a random number & letter should appear on the screen. The UILabels are already connected to a property and the UIButton is already connected to this IBAction.
 }
 
 - (NSString *)generateRandomLetter
 {
-    return @"?";
+    NSArray *alphabet =
+    [NSArray arrayWithObjects: @"a", @"b", @"c", @"d", @"e", @"f", nil];
+    return alphabet[[self generateRandomNumberBetween0And:(alphabet.count-1)]];
 }
 
 /**

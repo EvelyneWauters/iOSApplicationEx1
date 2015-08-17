@@ -17,6 +17,9 @@
 		ABCCB82C1B7E1D4300E0C7E9 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCCB82B1B7E1D4300E0C7E9 /* ImageViewController.m */; };
 		ABCCB82F1B7E1E7200E0C7E9 /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCCB82E1B7E1E7200E0C7E9 /* SwitchViewController.m */; };
 		ABCCB8321B7E1E7B00E0C7E9 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCCB8311B7E1E7B00E0C7E9 /* SliderViewController.m */; };
+		BE22319F1B81E00100C04076 /* emoji.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE22319E1B81E00100C04076 /* emoji.jpg */; };
+		BE2231A21B82013600C04076 /* SegmentedControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2231A11B82013600C04076 /* SegmentedControlViewController.m */; };
+		BE2231A51B82072600C04076 /* DateController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2231A41B82072600C04076 /* DateController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,11 @@
 		ABCCB82E1B7E1E7200E0C7E9 /* SwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwitchViewController.m; path = Classes/SwitchViewController.m; sourceTree = "<group>"; };
 		ABCCB8301B7E1E7B00E0C7E9 /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SliderViewController.h; path = Classes/SliderViewController.h; sourceTree = "<group>"; };
 		ABCCB8311B7E1E7B00E0C7E9 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SliderViewController.m; path = Classes/SliderViewController.m; sourceTree = "<group>"; };
+		BE22319E1B81E00100C04076 /* emoji.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = emoji.jpg; path = Images.xcassets/emoji.jpg; sourceTree = "<group>"; };
+		BE2231A01B82013600C04076 /* SegmentedControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SegmentedControlViewController.h; path = Classes/SegmentedControlViewController.h; sourceTree = "<group>"; };
+		BE2231A11B82013600C04076 /* SegmentedControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SegmentedControlViewController.m; path = Classes/SegmentedControlViewController.m; sourceTree = "<group>"; };
+		BE2231A31B82072600C04076 /* DateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateController.h; path = Classes/DateController.h; sourceTree = "<group>"; };
+		BE2231A41B82072600C04076 /* DateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateController.m; path = Classes/DateController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,10 @@
 				ABCCB82E1B7E1E7200E0C7E9 /* SwitchViewController.m */,
 				ABCCB8301B7E1E7B00E0C7E9 /* SliderViewController.h */,
 				ABCCB8311B7E1E7B00E0C7E9 /* SliderViewController.m */,
+				BE2231A01B82013600C04076 /* SegmentedControlViewController.h */,
+				BE2231A11B82013600C04076 /* SegmentedControlViewController.m */,
+				BE2231A31B82072600C04076 /* DateController.h */,
+				BE2231A41B82072600C04076 /* DateController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +171,7 @@
 		ABCCB8211B7E00D200E0C7E9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BE22319E1B81E00100C04076 /* emoji.jpg */,
 				ABCCB8051B7E00BE00E0C7E9 /* Images.xcassets */,
 			);
 			name = Resources;
@@ -262,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE22319F1B81E00100C04076 /* emoji.jpg in Resources */,
 				ABCCB8041B7E00BE00E0C7E9 /* Main.storyboard in Resources */,
 				ABCCB8091B7E00BE00E0C7E9 /* LaunchScreen.xib in Resources */,
 				ABCCB8061B7E00BE00E0C7E9 /* Images.xcassets in Resources */,
@@ -287,7 +301,9 @@
 				ABCCB8291B7E1C6A00E0C7E9 /* RandomViewController.m in Sources */,
 				ABCCB82C1B7E1D4300E0C7E9 /* ImageViewController.m in Sources */,
 				ABCCB82F1B7E1E7200E0C7E9 /* SwitchViewController.m in Sources */,
+				BE2231A51B82072600C04076 /* DateController.m in Sources */,
 				ABCCB7FB1B7E00BE00E0C7E9 /* main.m in Sources */,
+				BE2231A21B82013600C04076 /* SegmentedControlViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +498,7 @@
 				ABCCB81A1B7E00BE00E0C7E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABCCB81B1B7E00BE00E0C7E9 /* Build configuration list for PBXNativeTarget "Oefening-MVC-0Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +507,7 @@
 				ABCCB81D1B7E00BE00E0C7E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

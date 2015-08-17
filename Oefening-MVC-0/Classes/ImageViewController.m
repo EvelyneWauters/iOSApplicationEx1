@@ -18,7 +18,29 @@
 
 - (IBAction)didTapButton:(UIButton *)button
 {
-    #warning - Every time you press the button, select another image. Be sure to check out the UIImageView's scaling modes. The UIImageView is `NOT` yet connected to a property and the UIButton is `NOT` yet connected to this IBAction.
+    //self.imageView.image = [UIImage imageNamed:@"emoji"];
+    
+    NSArray *imageArray = [ImageViewController getImageArray];
+    self.imageView.image = imageArray[[ImageViewController generateRandomPlaceInArray: imageArray]];
+    
+    
+    //warning - Every time you press the button, select another image. Be sure to check out the UIImageView's scaling modes. The UIImageView is `NOT` yet connected to a property and the UIButton is `NOT` yet connected to this IBAction.
+}
+
+
+
+
++ (NSUInteger)generateRandomPlaceInArray:(NSArray*)array
+{
+    return arc4random_uniform(array.count - 1);
+}
+
+
++ (NSArray *)getImageArray
+{
+   NSArray *imageArray =
+    [NSArray arrayWithObjects: [UIImage imageNamed:@"pineapple1"], [UIImage imageNamed:@"pineapple2"], [UIImage imageNamed:@"pineapple3"], [UIImage imageNamed:@"pineapple4"], [UIImage imageNamed:@"pineapple5"], [UIImage imageNamed:@"pineapple6"], nil];
+    return imageArray;
 }
 
 @end
